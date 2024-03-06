@@ -1,0 +1,16 @@
+{%- if page.list_title -%}
+<h2 class="post-list-heading">{{ page.list_title }}</h2>
+{%- endif -%}
+
+{% if include.filter-by == "category" %}
+	{% assign group = site.categories %}
+	{% for item in group %}
+		{% assign item_name = item | first %}
+
+		<h3 id="{{item_name | downcase}}">{{item_name}}</h3>
+		{% assign postlist = group[item_name] %}
+		{% include postshowcase.html posts=postlist %}
+
+	{% endfor %}
+
+{% endif %}
