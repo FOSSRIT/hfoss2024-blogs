@@ -22,7 +22,7 @@ title: HFOSS 2024 Student Blogs
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   This site houses student blog posts from the IGME-582 Humanitarian Free and Open Source Software class at the Rochester Institute of Technology
-baseurl: "hfoss2024-blogs" # the subpath of your site, e.g. /blog
+baseurl: "/hfoss2024-blogs" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  FOSSRIT
