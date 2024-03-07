@@ -9,9 +9,6 @@ layout: post
 categories: 
 #- Bug Fix
 #- Contribution
-#- Lit Review 1
-#- Lit Review 2
-#- Lit Review 3
 
 
 # Enter your name below
