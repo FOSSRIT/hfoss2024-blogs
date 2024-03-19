@@ -33,12 +33,12 @@ I first went about pursuing the issue by changing the contents of the [Open@RIT 
 
 <br><br>
 
-![The Pull Request](https://imgur.com/Z8zpQn4)
+![The Pull Request](https://i.imgur.com/Z8zpQn4.png)
 Once I completed my changes, I made my [pull request](https://github.com/FOSSRIT/fossrit.github.io/pull/190) to the parent repository. In this pull request, Adrien and I go back and forth about what the changes I make and potential revisions and ideas that sprout from the fix. I had to go back and revise quite a few times so I kept on committing to the pull request, which wasn't intentional after all the issues were fixed.
 
 <br><br>
 
-![Some small minor details](https://imgur.com/a/O22hPhe)
+![Some small minor details](https://i.imgur.com/a/O22hPhe.png)
 What blocked me at first in getting my pull request approved was the small minor details, such as the history that Open@RIT was accepted by the provost in 2020. I removed much more content than I should have as well, so a lot of the work inside the pull request was reintroducing that information. Once I completed those changes, I had succeeded getting my pull request merged! (And came up with a great idea for my contribution!)
 
 <br><br>
@@ -48,6 +48,6 @@ The bug fix also added documentation on the best practice for how to contribute 
 
 ## Contribution
 
-![History Preview](https://imgur.com/a/0U6wuPn)
+![History Preview](https://i.imgur.com/a/0U6wuPn.png)
 Work In Progress! Will extend this section, but for now I have just submitted my [pull request](https://github.com/FOSSRIT/fossrit.github.io/pull/191)! History of Open Source at RIT! (and finally fixing Issue #188, which was not the optimal solution in the bug fix)
 
