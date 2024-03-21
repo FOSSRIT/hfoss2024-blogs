@@ -139,7 +139,7 @@ Now that they knew I wasn't ghosting them after submitting a faulty bug fix, I
 got to work making the MSRV check apply correctly. The change ended up being a
 lot simpler than I expected - there was already a function `is_ok_to_suggest`
 that checks if a given pice of code should be linted. Since it aleady had access
-to whether the suggested function would be `clone_from` or `clone_to`, so I had
+to whether the suggested function would be `clone_from` or `clone_to`, all I had
 to do was pass the MSRV to it and put the check there. I also updated the tests
 I had written to confirm that `clone_from` suggestions were no longer affected
 by the MSRV. Just like last time, submtting
