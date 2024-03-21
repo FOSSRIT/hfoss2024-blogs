@@ -5,9 +5,7 @@ categories:
 author: Andrew Cudzinovic
 ---
 
-# Contributing to Clippy: First Bug Fix
-
-## Clippy: What and Why
+# Clippy: What and Why
 
 Clippy is a tool known as a linter, which reads through your source code and
 suggests improvements where your code is suboptimal in various ways. It's the
@@ -18,7 +16,7 @@ frequently, it's written in a language (Rust) I'm comfortable working with, and
 it was suggested as a good starting point for contributing to Rust without
 having to jump directly into working on the much more complex compiler.
 
-## Community Evaluation
+# Community Evaluation
 
 Clippy is a sub-project of Rust, and shares much of the same community
 resources, such as their
@@ -38,7 +36,7 @@ compiler, and a
 Clippy. The Clippy development guide in particular was extremely helpful, since
 it covered how to do the changes I ended up working on.
 
-## Choosing an issue
+# Choosing an issue
 
 I wanted to start with something small that I could quickly fix without having
 to get too deep into interfacing with the compiler, so I opened up the issues
@@ -51,7 +49,7 @@ have anyone assigned to it yet, and althouth it didn't have the
 
 <<Issue.png>>
 
-## Fixing the bug
+# Fixing the bug
 
 The first step was to get set up to do the development: this meant forking the
 repo, cloning the fork, and making sure building locally worked and all the
@@ -94,7 +92,7 @@ code that should only trigger the lint in the MSRV 1.63 function. The test
 system runs Clippy over the test code and compares the output to a known-good
 version, so I had to update that once I confirmed everything worked as expected.
 
-## The pull request
+# The pull request
 
 Now that the fix was implemented, I pushed it back to my fork on Github and
 started writing a pull request. The provided template explained how to link the
@@ -117,7 +115,7 @@ was merged into the main branch.
 
 Bug fixed, code merged, issue closed - we're done, mission success!
 
-## Not so fast...
+# Not so fast...
 
 I returned the next day to a comment on my pull request from the original author
 of the lint.
@@ -129,7 +127,7 @@ Uh oh. So, it turns out the lint doesn't just emit suggestions to use
 cases. In disabling the lint below MSRV 1.63, I disabled not only the improper
 suggestions, but also correct ones as well. Better fix that.
 
-## Fixing the fix
+# Fixing the fix
 
 The first thing I did was respond to let them know I was working on a fix:
 
@@ -148,7 +146,7 @@ and it was merged a few hours later.
 
 <<Thanks.png>>
 
-## Conclusion
+# Conclusion
 
 This was my first time contributing to a major open-source project, and overall
 I'd say it went quite well. The onboarding, contribution, and development
