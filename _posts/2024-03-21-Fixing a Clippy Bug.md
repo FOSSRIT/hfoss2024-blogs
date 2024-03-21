@@ -49,7 +49,7 @@ seemed good: it was a relatively minor bug that had a simple fix, it didn't
 have anyone assigned to it yet, and althouth it didn't have the
 `good-first-issue` tag, I felt confident that I could do it.
 
-<<Issue.png>>
+![TODO](assets/2024-02-21-Fixing_a_Clippy_Bug/Issue.png)
 
 # Fixing the bug
 
@@ -59,12 +59,12 @@ tests passed. I had a little trouble getting the right packages installed
 (NixOS can be like that sometimes), but other than that it was as simple as
 `git clone`, `cargo build`, `cargo test`.
 
-<<Build.png>>
+![TODO](assets/2024-02-21-Fixing_a_Clippy_Bug/Build.png)
 
 The next step was to "claim" the issue and mark myself as assigned to work on
 it. This was done using a command on one of the Github bots:
 
-<<Claim.png>>
+![TODO](assets/2024-02-21-Fixing_a_Clippy_Bug/laim.png)
 
 With the issue claimed and my local development environment set up, I started
 working on actually fixing the issue. The problem was relatively simple: a
@@ -78,7 +78,7 @@ want a lint to have, enough that it has
 [its own section](https://doc.rust-lang.org/clippy/development/adding_lints.html#specifying-the-lints-minimum-supported-rust-version-msrv)
 in the Clippy development book.
 
-<<Documentation.png>>
+![TODO](assets/2024-02-21-Fixing_a_Clippy_Bug/Documentation.png)
 
 Adding the MSRV check ended up involving adding a few bits of code scattered
 across a few different files: declaring the required MSRV, adding an MSRV to the
@@ -87,7 +87,7 @@ handle situations where a section of code has an explicitly-set MSRV. Once the
 implementation of the fix was in, the last step was to write new tests to
 confirm it all worked.
 
-<<Tests.png>>
+![TODO](assets/2024-02-21-Fixing_a_Clippy_Bug/Tests.png)
 
 The tests are just a pair of functions with specified MSRVs, contaning identical
 code that should only trigger the lint in the MSRV 1.63 function. The test
@@ -103,17 +103,17 @@ of the overall structure. I ended up looking at a few other pull requests as
 examples, and then wrote and
 [submitted my own](https://github.com/rust-lang/rust-clippy/pull/12511).
 
-<<Pull.png>>
+![TODO](assets/2024-02-21-Fixing_a_Clippy_Bug/Pull.png)
 
 Immidiately, one of the Github bots assigned a reviewer, added a "waiting on
 review" tag, and sent a message welcoming me to the project.
 
-<<Rustbot_welcome.png>>
+![TODO](assets/2024-02-21-Fixing_a_Clippy_Bug/Rustbot_welcome.png)
 
 Only a few hours late, the assigned reviewer approved the pull request, and it
 was merged into the main branch.
 
-<<Merge.png>>
+![TODO](assets/2024-02-21-Fixing_a_Clippy_Bug/Merge.png)
 
 Bug fixed, code merged, issue closed - we're done, mission success!
 
@@ -122,7 +122,7 @@ Bug fixed, code merged, issue closed - we're done, mission success!
 I returned the next day to a comment on my pull request from the original author
 of the lint.
 
-<<Comment.png>>
+![TODO](assets/2024-02-21-Fixing_a_Clippy_Bug/Comment.png)
 
 Uh oh. So, it turns out the lint doesn't just emit suggestions to use
 `clone_to`, and will also suggest using `clone_from` in a different set of
@@ -133,7 +133,7 @@ suggestions, but also correct ones as well. Better fix that.
 
 The first thing I did was respond to let them know I was working on a fix:
 
-<<Response.png>>
+![TODO](assets/2024-02-21-Fixing_a_Clippy_Bug/Response.png)
 
 Now that they knew I wasn't ghosting them after submitting a faulty bug fix, I
 got to work making the MSRV check apply correctly. The change ended up being a
@@ -146,7 +146,7 @@ by the MSRV. Just like last time, submtting
 [the PR](https://github.com/rust-lang/rust-clippy/pull/12516) went smoothly,
 and it was merged a few hours later.
 
-<<Thanks.png>>
+![TODO](assets/2024-02-21-Fixing_a_Clippy_Bug/Thanks.png)
 
 # Conclusion
 
