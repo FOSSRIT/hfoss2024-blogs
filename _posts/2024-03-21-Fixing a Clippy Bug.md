@@ -10,11 +10,13 @@ author: Andrew Cudzinovic
 Clippy is a tool known as a linter, which reads through your source code and
 suggests improvements where your code is suboptimal in various ways. It's the
 standard linter for the Rust programming language, and is maintained as a part
-of the Rust project at https://github.com/rust-lang/rust-clippy. I chose to
-contribute to Clippy because it's a tool I'm already familiar with and use very
-frequently, it's written in a language (Rust) I'm comfortable working with, and
-it was suggested as a good starting point for contributing to Rust without
-having to jump directly into working on the much more complex compiler.
+of the Rust project at
+[https://github.com/rust-lang/rust-clippy](https://github.com/rust-lang/rust-clippy).
+I chose to contribute to Clippy because it's a tool I'm already familiar with
+and use very frequently, it's written in a language (Rust) I'm comfortable
+working with, and it was suggested as a good starting point for contributing
+to Rust without having to jump directly into working on the much
+more complex compiler.
 
 # Community Evaluation
 
